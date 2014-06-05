@@ -1,1 +1,1 @@
-add Adina to Monday 18th schedule sometime!
+- [ ] add Adina to Monday 18th schedule sometime!
