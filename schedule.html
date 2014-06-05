@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" class="crsa-stop-animations">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Explorations in Data Analyses for Metagenomic Advances in Microbial Ecology (EDAMAME) Workshop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/simplex.bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grid.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://edamame-course.org">EDAMAME</a>
+            </div>
+            <!-- nav links, etc., go here -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Schedule</a>
+                    </li>
+                    <li><a href="#">Lesson Material</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="page-header">
+            <h2>Explorations in Data Analyses for Metagenomic Advances in Microbial Ecology (EDAMAME) Workshop</h2>
+        </div>
+        <p>Note: We're planning on covering a lot of material so we'll be starting promptly at 9:30 am.  Please be prepared for class by following any pre-course instructions. Thanks!</p>
+
+        <!-- /August 13th, 2014-->
+        <div class="row" style="margin-top:15px">
+            <div class="span12">
+                <table style="border-top:0" class="table table-striped table-centered table-bordered tabled-condensed">
+                    <thead>
+                        <tr style="height:80px">
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Wednesday, <p>August 13th, 2014</p></strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Introductions / Basics / Getting started with QIIME</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd">
+                                <strong>Schedule</strong>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="table-pricing-pill-scenario-one">
+                        <tr>
+                            <td><strong>9:30 AM</strong></td>
+                            <td>Introduction</td>
+                            <td>Welcome! Course Introduction! (Everybody)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>10:00 AM</strong></td>
+                            <td>Lecture</td>
+                            <td>Overview of microbial community ecology and high-throughput sequencing (Ashley)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>11:00 AM</strong></td>
+                            <td>Tutorial</td>
+                            <td>Quick Introduction to Linux/command-line (Tracy)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Noon</strong></td>
+                            <td>Lunch</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>13:15 PM</strong></td>
+                            <td>Tutorial</td>
+                            <td>First steps in data analysis using QIIME, including using scripts (Ashley / Tracy)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>15:00 PM</strong></td>
+                            <td>Tutorial</td>
+                            <td>Installing QIIME on your laptop (Ashley)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>16:00 PM</strong></td>
+                            <td>Afternoon Break</td>
+                            <td>Take a break or work on your own</td>
+                        </tr>
+                        <tr>
+                            <td><strong>18:00 PM</strong></td>
+                            <td>Dinner</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>20:00 PM</strong></td>
+                            <td>Presentations</td>
+                            <td>Five minute presentations by students - lightning "get to know you" research presentations!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <p>Notes: Homework alert!  Please have QIIME installed in advance of your arrival.  MacQiime for Macs and Virtual Machine
+        Is QIIME installed on your computer?  If it is not working, see us before the class today or come back early from lunch.
+        </p>
+        <hr>
+
+        <!-- /August 14th, 2014-->
+        <div class="row" style="margin-top:15px">
+            <div class="span12">
+                <table style="border-top:0" class="table table-striped table-centered table-bordered tabled-condensed">
+                    <thead>
+                        <tr style="height:80px">
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Thursday, <p>August 14th, 2014</p></strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Diversity / QIIME</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd">
+                                <strong>Schedule</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-pricing-pill-scenario-one">
+                        <tr>
+                            <td><strong>9:30 AM</strong></td>
+                            <td>Lecture</td>
+                            <td>Alpha diversity in all its glory</td>
+                        </tr>
+                        <tr>
+                            <td><strong>10:30 AM</strong></td>
+                            <td>Break</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>10:45 AM</strong></td>
+                            <td>Tutorial</td>
+                            <td>Building an OTU table and calculating alpha diversity in QIIME</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Noon</strong></td>
+                            <td>Lunch</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>13:15 PM</strong></td>
+                            <td>Lecture</td>
+                            <td>Beta diversity and visualizing community patterns</td>
+                        </tr>
+                        <tr>
+                            <td><strong>14:00 PM</strong></td>
+                            <td>Tutorial</td>
+                            <td>Beta diversity in QIIME, exporting data tables for R</td>
+                        </tr>
+                        <tr>
+                            <td><strong>15:00 PM</strong></td>
+                            <td>Tutorial</td>
+                            <td>Automating analyses with pipelines and scripts; anatomy of a script (Josh)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>16:00 PM</strong></td>
+                            <td>Break</td>
+                            <td>Play volleyball or work on your own</td>
+                        </tr>
+                        <tr>
+                            <td><strong>18:00 PM</strong></td>
+                            <td>Dinner</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>20:00 PM</strong></td>
+                            <td>Lecture</td>
+                            <td>Jack Gilbert Guest Lecture - Shared lecture with Next Generation Sequencing Course</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <!-- /August 15th, 2014-->
+        <div class="row" style="margin-top:15px">
+            <div class="span12">
+                <table style="border-top:0" class="table table-striped table-centered table-bordered tabled-condensed">
+                    <thead>
+                        <tr style="height:80px">
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Friday, <p>August 15th, 2014</p></strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Cloud computing / Mastering mothur</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd">
+                                <strong>Schedule</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-pricing-pill-scenario-one">
+                        <tr>
+                            <td><strong>9:30 AM</strong></td>
+                            <td>Tutorial</td>
+                            <td>Using resources (Amazon: how to start an instance, etc; local servers) other than your laptop for the heavy lifting of sequence analysis (Josh)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>mothuring</td>
+                            <td>General mothur-ing:  sequence processing, alpha diversity, beta diversity, visualization, exporting data tables for R (Kevin Theis) assist?</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Noon</strong></td>
+                            <td>Lunch</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>13:15 PM</strong></td>
+                            <td>More mothuring</td>
+                            <td>General mothur-ing: sequence processing, alpha diversity, beta diversity, visualization, exporting data tables for R (Kevin Theis) assist?</td>
+                        </tr>
+                        <tr>
+                            <td><strong>16:00 PM</strong></td>
+                            <td>Break</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>18:00 PM</strong></td>
+                            <td>Dinner / BBQ Night?</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>20:00 PM</strong></td>
+                            <td>Lecture</td>
+                            <td>Guest Lecture: Pat Schloss</td>
+                        </tr>
+                        <tr>
+                            <td><strong>21:30 PM</strong></td>
+                            <td>Fun Stuff</td>
+                            <td>Evening Firepit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <!-- /August 16th, 2014-->
+        <div class="row" style="margin-top:15px">
+            <div class="span12">
+                <table style="border-top:0" class="table table-striped table-centered table-bordered tabled-condensed">
+                    <thead>
+                        <tr style="height:80px">
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Saturday, <p>August 16th, 2014</p></strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Metagenomics</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd">
+                                <strong>Schedule</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-pricing-pill-scenario-one">
+                        <tr>
+                            <td><strong>9:30 AM</strong></td>
+                            <td>Lecture</td>
+                            <td>Shotgun Metagenomics - Short Read Annotation (Josh)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>10:30 AM</strong></td>
+                            <td>Break</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>10:45 AM</strong></td>
+                            <td>Tutorial</td>
+                            <td>Identifying Short Reads through various means</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Noon</strong></td>
+                            <td>Lunch</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>13:15 PM</strong></td>
+                            <td>Tutorial</td>
+                            <td>More Metagenomics</td>
+                        </tr>
+                        <tr>
+                            <td><strong>15:00 PM</strong></td>
+                            <td>Tutorial</td>
+                            <td>End of the day option: check in if you were unable to install R / RStudio / vegan package</td>
+                        </tr>
+                        <tr>
+                            <td><strong>16:00 PM</strong></td>
+                            <td>Break</td>
+                            <td>Go Swimming or continue to work -- it's up to you!</td>
+                        </tr>
+                        <tr>
+                            <td><strong>18:00 PM</strong></td>
+                            <td>Dinner</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><strong>20:00 PM</strong></td>
+                            <td>Lecture</td>
+                            <td>Guest Lecture - C. Titus Brown</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <!-- /August 17th, 2014-->
+        <div class="row" style="margin-top:15px">
+            <div class="span12">
+                <table style="border-top:0" class="table table-striped table-centered table-bordered tabled-condensed">
+                    <thead>
+                        <tr style="height:80px">
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Sunday, <p>August 17th, 2014</p></strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Topic</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd">
+                                <strong>Schedule</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-pricing-pill-scenario-one">
+                        <tr>
+                            <td><strong>Time</strong></td>
+                            <td>Introduction</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+
+
+
+        Sunday
+        17 August 2014
+
+
+        <!-- /August 18th, 2014-->
+        <div class="row" style="margin-top:15px">
+            <div class="span12">
+                <table style="border-top:0" class="table table-striped table-centered table-bordered tabled-condensed">
+                    <thead>
+                        <tr style="height:80px">
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Monday, August 18th, 2014</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Topic</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd">
+                                <strong>Schedule</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-pricing-pill-scenario-one">
+                        <tr>
+                            <td><strong>Time</strong></td>
+                            <td>Introduction</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+
+Adina on monday!
+
+        Shotgun Metagenomics
+
+        ·  Brunch: J. Tiedje to join us for Brunch and offer an informal Q/A perspective on Microbial Ecology
+        ·  Late Morning:  Metagenomics continued: assembly (Josh / Adina?)
+        ·  Afternoon:  Relax!  Free time, Bell’s brewpub in Kalamazoo for dinner
+
+
+        Monday
+        18 August 2014
+
+        Community ecology / R
+        ·  9:30 Lecture: Hypothesis testing, identifying gradients, and linking environmental and community data  + research (Jay Lennon- confirmed)
+        ·  10:45 Tutorials:  Using R for community ecology analyses (Stuart Jones - confirmed) Start before lunch, finish after lunch
+        16:00 Guest lecture: Jay Lennon research talk
+        20:00 Guest lecture:  Stuart Jones research talk
+
+        <!-- /August 19th, 2014-->
+        <div class="row" style="margin-top:15px">
+            <div class="span12">
+                <table style="border-top:0" class="table table-striped table-centered table-bordered tabled-condensed">
+                    <thead>
+                        <tr style="height:80px">
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Tuesday, August 19th, 2014</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Topic</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd">
+                                <strong>Schedule</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-pricing-pill-scenario-one">
+                        <tr>
+                            <td><strong>Time</strong></td>
+                            <td>Introduction</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+
+        Tuesday
+        19 August 2014
+
+
+        Databases, independent study
+        ·  9:30 Early AM: Guest tutorial (J. Cole: RDP confirmed)
+        ·  Mid AM: Databases for community sequences:  What’s available out there?  Learning activity:  Split into teams for each to explore one db in-depth, report back to the group:  MG-RAST/ SRA / SiLVA / greengenes / RDP / VAMPS / PHAST / UNITE
+        ·  1:30 Early PM:  Guest tutorial:  (Kathryn Docherty - confirmed: how to wrangle contextual data as per NEON - confirmed)
+        ·  Late PM:  Independent study and directed trouble shooting; TAs available; time to meet with speakers
+        ·  Bonus lecture: Josh - the wild and wooly world of non-16S sequences
+        ·   Last night fire pit social / BBQ celebration
+
+        Wednesday
+        20 August 2014
+        Ecological interpretation of microbial data
+        -More of metagenomics / working with large, noisy matrices: networks, analyzing individual community structure; advanced R-ing; using contextual data for interpretation
+
+
+
+        Choose your own adventure
+        Options:
+
+        Ashley
+        ·  Networks analyses: LSA, MINE, Cytoscape (Ashley)
+        ·  Analyzing individual community structure:  Taxon’s contribution to community dynamics (Ashley)
+
+        Tracy
+        ·  Introduction to Python scripting for database mining and data wrangling
+        ·  Data management (SQL / best practices, where to store the data)
+
+        Josh
+        How sequencing technology (Illumina, PacBio, Sanger, etc) works and what it means to your ecological data - Structure of sequencing data?
+        ·  Using the web to pull data from databases (MG-RAST) (Josh)
+        ·  Using markers other than 16S for amplicon sequencing (ITS, 18S)
+        ·  KEGG Pathway / functional pathway analysis
+        ·  Advanced annotation of metagenomic reads
+
+        Adina Howe?
+        Kathryn Docherty - confirmed
+        Linking contextual and metadata to genomic data
+
+        <!-- /August 20th, 2014-->
+        <div class="row" style="margin-top:15px">
+            <div class="span12">
+                <table style="border-top:0" class="table table-striped table-centered table-bordered tabled-condensed">
+                    <thead>
+                        <tr style="height:80px">
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Wednesday, August 20th, 2014</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd;border-top-left-radius:4px">
+                                <strong>Topic</strong>
+                            </th>
+                            <th style="vertical-align:middle;border-top:1px solid #ddd">
+                                <strong>Schedule</strong>
+                            </th
+                        </tr>
+                    </thead>
+                    <tbody class="table-pricing-pill-scenario-one">
+                        <tr>
+                            <td><strong>Time</strong></td>
+                            <td>Introduction</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                        <tr>
+                            <td><strong>time</strong></td>
+                            <td>space</td>
+                            <td>Schedule</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <!-- /container -->
+
+        <!-- Bootstrap core JavaScript ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </div>
+</body>
+</html>
