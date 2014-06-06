@@ -8,7 +8,7 @@ Things to add to schedule:
           Dinner - Monday to Thursday
           Continental Breakfast is optional for an extra $6.00 per person (served Monday to Friday)
 - [ ] Check out Thursday 21st?
-- [ ] Include discussion of HPCC use or qsub scripts? HPCC presentation on 20th
+- [ ] Include discussion of HPCC use or qsub scripts? HPCC presentation on 20th?
 - [ ] Schedule time for evaluations on Wednesday morning
 - [ ] Debriefing on Wednesday morning?  1 hour - overview of what we learned in the course?
 - [ ] Time for course clean up on Wednesday morning (NGS course usually takes an hour or more?)
